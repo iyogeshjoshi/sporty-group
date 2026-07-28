@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #10151f;
+  --color-paper: #f6f7f9;
+  --color-surface: #ffffff;
+  --color-rule: #e3e6ec;
+  --color-muted: #69738a;
+  /*--color-brand: #e8112d;*/
+  --color-brand: #1199e8;
+
+  --font-display: "Archivo Expanded", "Archivo", system-ui, sans-serif;
+  --font-body: "Archivo", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --animate-badge-in: badge-in 300ms ease-out;
+}
+
+@keyframes badge-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+body {
+  margin: 0;
+}
